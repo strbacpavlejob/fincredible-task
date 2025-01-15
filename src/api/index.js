@@ -20,7 +20,7 @@ export const getToken = async () => {
 };
 
 export const getBankData = async () => {
-  const token = sessionStorage.getItem("sessionToken", response.data);
+  const token = sessionStorage.getItem("sessionToken");
   try {
     const response = await axios.get(
       "https://a0ba5803-e873-42b3-b311-665d53ea3479.mock.pstmn.io/bank-data",
